@@ -5,11 +5,16 @@
 include "../common/dbinc.php";
 include "../common/session.php";
 include "../models/userModel.php";
+include "../models/adminModel.php";
 
 function varExists($var) {
     return isset($var);
 }
 $pdo = getConnection();
+
+
+
+
 
 if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
 
@@ -56,12 +61,58 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
         
                     echo '<script>
                         alert("Account Created Successfully!");
-                        window.location.href="../../fe/login.php";
+                        window.location.href="../../fe/CMS/addAdmin.php";
                     </script>';
                 }
 
 
             break;
+
+
+            case "ACTIVATE":
+                $plateID = $_POST["ID"];
+                activateDeactivate($plateID, $pdo);
+
+                echo '<script>
+                alert("Action done Successfully!");
+                window.location.href="../../fe/CMS/activate.php";
+            </script>';
+                
+
+            break;
+
+            case "ADDITEM":
+                $id = $_POST['id'];
+                $platter = $_POST['platter'];
+                $description = $_POST['description'];
+                $status = $_POST['isActive'];
+                addPlatter($id, $platter, $description, $status, $pdo);
+
+                echo '<script>
+                alert("Platter Added Successfully!");
+                window.location.href="../../fe/CMS/AddItem.php";
+            </script>';
+                
+
+
+
+
+
+            break;
+
+            case "DELETEPLATTER":
+                $id = $_POST['id'];
+                deletePlatter($id, $pdo);
+                echo '<script>
+                alert("Platter Deleted Successfully!");
+                window.location.href="../../fe/CMS/activate.php";
+            </script>';
+
+                
+
+            break;
+
+           
         }
 
     }
@@ -72,4 +123,3 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
 
 }
 
-echo "not set";

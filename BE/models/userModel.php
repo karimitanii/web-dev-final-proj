@@ -9,6 +9,23 @@ function getPlateIDs($pdo){
 
 }
 
+function getPlateNames($pdo){
+    $query = "SELECT platter FROM PLATTERS WHERE isActive='1'";
+    $stmt = $pdo->query($query);
+    $platters = $stmt->fetchALL(PDO::FETCH_COLUMN);
+    return $platters;
+
+}
+
+function getPlates($pdo){
+    $query = "SELECT ID, PLATTER, `DESCRIPTION`, isActive FROM PLATTERS";
+    $stmt = $pdo->query($query);
+    $plates = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $plates;
+
+}
+
+
 
 
 
@@ -59,3 +76,27 @@ function createUser($pdo, $fullName, $dob, $sex, $displayName, $email, $pass) {
 }
 
 // END SIGNUP BACKEND
+
+
+
+function activateDeactivate($plateID, $pdo){
+    $query = "UPDATE PLATTERS SET isActive= (isActive +1)%2 WHERE ID='$plateID'";
+    $pdo->query($query);
+
+
+}
+
+function deletePlatter($plateID, $pdo){
+    $query = "DELETE FROM PLATTERS WHERE ID=$plateID";
+    $pdo->query($query);
+
+}
+
+function addPlatter($ID, $platter, $description, $status, $pdo){
+    $query = "INSERT INTO PLATTERS VALUES($ID, '$platter', '$description', $status)";
+    $pdo->query($query);
+    
+
+
+}
+

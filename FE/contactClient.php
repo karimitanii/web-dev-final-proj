@@ -27,7 +27,7 @@ https://templatemo.com/tm-589-lugx-gaming
 
 -->
 <?php
-require_once("views/clientView.php"); ?>
+include "views/commonView.php" ?>
   </head>
   </head>
 

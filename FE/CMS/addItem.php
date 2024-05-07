@@ -1,6 +1,9 @@
 <?php
-require("../controller/cmsController.php");
-require("../views/CMSView.php")
+
+require("../views/CMSView.php");
+include "../../be/common/session.php";
+ensureLoggedInCMS();
+
 
 
 
@@ -21,6 +24,8 @@ require("../views/CMSView.php")
     <link rel="stylesheet" href="../assets/css/templatemo-lugx-gaming.css">
     <link rel="stylesheet" href="../assets/css/owl.css">
     <link rel="stylesheet" href="../assets/css/animate.css">
+
+    <?php include "../views/commonView.php"?>
 </head>
 
 <style>
@@ -50,32 +55,7 @@ require("../views/CMSView.php")
 
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="cmsindex.php" class="logo">
-                            <img src="assets/images/logo.png" alt="" style="width: 158px;">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="../cmsindex.php" class="active">Home</a></li>
-                            <li><a href="addItem.php">Add Item</a></li>
-                            <li><a href="activate.php">Activate/Deactivate Item</a></li>
-                            <li><a href="contactUs.php">Contact Us</a></li>
-                            <li><a href="AddAdmin.php">Add Admin</a></li>
-                            <li><a href="indexClient.php">View Client Side</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <?php get_header_CMS()?>
     </header>
     <!-- ***** Header Area End ***** -->
 
