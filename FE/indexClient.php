@@ -26,6 +26,8 @@ TemplateMo 589 lugx gaming
 https://templatemo.com/tm-589-lugx-gaming
 
 -->
+<?php
+require_once("views/clientView.php"); ?>
   </head>
 
 <body>
@@ -45,31 +47,9 @@ https://templatemo.com/tm-589-lugx-gaming
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="indexClient.php" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="indexClient.php" class="active">Home</a></li>
-                      <li><a href="shopClient.php">Our Shop</a></li>
-                      <li><a href="product-details.php">Product Details</a></li>
-                      <li><a href="contactClient.php">Contact Us</a></li>
-                      <li><a href="#">Sign In</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
+<?php
+get_header();
+?>
   </header>
   <!-- ***** Header Area End ***** -->
 
@@ -78,22 +58,13 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome to lugx</h6>
-            <h2>BEST GAMING SITE EVER!</h2>
-            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
-            <div class="search-input">
-              <form id="search" action="#">
-                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                <button role="button">Search Now</button>
-              </form>
-            </div>
+            <h6>Welcome to Walter White's Chef Page!</h6>
+            <h2>Best Lebanese - French Cuisine in Town!</h2>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-2">
           <div class="right-image">
-            <img src="assets/images/banner-image.jpg" alt="">
-            <span class="price">$22</span>
-            <span class="offer">-40%</span>
+            <img src="assets/images/chef.jpg" alt="">
           </div>
         </div>
       </div>
@@ -402,11 +373,9 @@ https://templatemo.com/tm-589-lugx-gaming
   </div>
 
   <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
-      </div>
-    </div>
+<?php
+get_footer();
+?>
   </footer>
 
   <!-- Scripts -->

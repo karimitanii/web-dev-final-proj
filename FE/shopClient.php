@@ -26,14 +26,6 @@ TemplateMo 589 lugx gaming
 https://templatemo.com/tm-589-lugx-gaming
 
 -->
-
-<?php 
-
-include "views/clientView.php";
-include "../BE/models/userModel.php";
-include "../BE/common/dbinc.php";
-
-?>
   </head>
 
 <body>
@@ -51,33 +43,11 @@ include "../BE/common/dbinc.php";
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="indexClient.php" class="active">Home</a></li>
-                      <li><a href="shopClient.php">Our Shop</a></li>
-                      <li><a href="product-details.php">Product Details</a></li>
-                      <li><a href="contactClient.php">Contact Us</a></li>
-                      <li><a href="#">Sign In</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
+   <!-- ***** Header Area Start ***** -->
+   <header class="header-area header-sticky">
+<?php
+get_header();
+?>
   </header>
   <!-- ***** Header Area End ***** -->
 
@@ -275,11 +245,9 @@ include "../BE/common/dbinc.php";
   </div>
 
   <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
-      </div>
-    </div>
+<?php
+get_footer();
+?>
   </footer>
 
   <!-- Scripts -->

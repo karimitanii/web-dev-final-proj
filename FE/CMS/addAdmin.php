@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Walter White</title>
+    <title>Lugx Gaming Shop HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,19 +50,17 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="cmsindex.php" class="logo">
+                    <a href="indexClient.php" class="logo">
                         <img src="assets/images/logo.png" alt="" style="width: 158px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="CMSindex.php" class="active">Home</a></li>
-                      <li><a href="CMS/addItem.php">Add Item</a></li>
-                      <li><a href="CMS/activate.php">Activate/Deactive Item</a></li>
-                      <li><a href="CMS/contactUs.php">Contact Us</a></li>
-                      <li><a href="CMS/AddAdmin.php">Add Admin</a></li>
-
-                      <li><a href="indexClient">View Client Side</a></li>
+                      <li><a href="indexClient.php" class="active">Home</a></li>
+                      <li><a href="shopClient.php">Our Shop</a></li>
+                      <li><a href="product-details.php">Product Details</a></li>
+                      <li><a href="contactClient.php">Contact Us</a></li>
+                      <li><a href="#">Sign In</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -80,81 +78,37 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome to </h6>
-            <?php
-           // $username = $_SESSION['username']; // Retrieve the username from the session
-      echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items." 
-    ?>
-            
+            <h6>Welcome to lugx</h6>
+            <h2>BEST GAMING SITE EVER!</h2>
+            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <button role="button">Search Now</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-2">
           <div class="right-image">
             <img src="assets/images/banner-image.jpg" alt="">
-            
+            <span class="price">$22</span>
+            <span class="offer">-40%</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="features">
-    <h2>Here are the features of being admin! </h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <a href="addItem.php">
-            <div class="item">
-              <div class="image">
-                <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
-              </div>
-              <h4>Add Item</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <a href="CMS/activate.php">
-            <div class="item">
-              <div class="image">
-                <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
-              </div>
-              <h4>Activate Item</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <a href="CMS/activate.php">
-            <div class="item">
-              <div class="image">
-                <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
-              </div>
-              <h4>De activate Item</h4>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-        <a href="CMS/addAdmin.php">
-        <div class="item">
-            <div class="image">
-                <img src="assets/images/featured-04.png" alt="" style="max-width: 44px;">
-            </div>
-            <h4>Add Admin</h4>
-        </div>
-    </a>
-</div>
+  
 
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
       </div>
     </div>
-  </div>
-
- 
-  
-        
-
-  
-
- 
+  </footer>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
