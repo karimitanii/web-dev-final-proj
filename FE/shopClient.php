@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Lugx Gaming - Shop Page</title>
+    <title>Walter White - Chef Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,14 @@ TemplateMo 589 lugx gaming
 https://templatemo.com/tm-589-lugx-gaming
 
 -->
+
+<?php 
+
+include "views/clientView.php";
+include "../BE/models/userModel.php";
+include "../BE/common/dbinc.php";
+
+?>
   </head>
 
 <body>
@@ -77,7 +85,7 @@ https://templatemo.com/tm-589-lugx-gaming
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3>Our Shop</h3>
+          <h3>Discover Our Cuisine!</h3>
           <span class="breadcrumb"><a href="#">Home</a> > Our Shop</span>
         </div>
       </div>
@@ -86,31 +94,35 @@ https://templatemo.com/tm-589-lugx-gaming
 
   <div class="section trending">
     <div class="container">
-      <ul class="trending-filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">Adventure</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".str">Strategy</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".rac">Racing</a>
-        </li>
-      </ul>
-      <div class="row trending-box">
-        <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+     
+
+      <div class="row tending-box">
+
+    <?php  listPlatters(getPlateIDs(getConnection()));
+
+    ?>
+      
+      
+      </div>
+
+      
+
+
+      
+      
+      
+      
+      <!-- <div class="row trending-box"> -->
+        <!-- <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/trending-01.jpg" alt=""></a>
               <span class="price"><em>$36</em>$24</span>
             </div>
             <div class="down-content">
               <span class="category">Action</span>
               <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+              <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
@@ -122,7 +134,7 @@ https://templatemo.com/tm-589-lugx-gaming
             </div>
             <div class="down-content">
               <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <h4>Assa Creed</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -256,19 +268,9 @@ https://templatemo.com/tm-589-lugx-gaming
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="pagination">
-          <li><a href="#"> &lt; </a></li>
-            <li><a href="#">1</a></li>
-            <li><a class="is_active" href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#"> &gt; </a></li>
-          </ul>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
+     
     </div>
   </div>
 
