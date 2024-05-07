@@ -56,13 +56,13 @@ https://templatemo.com/tm-589-lugx-gaming
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="shop.html">Add Item</a></li>
-                      <li><a href="product-details.html">Activate/Deactive Item</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#">Add Admin</a></li>
+                      <li><a href="CMSindex.php" class="active">Home</a></li>
+                      <li><a href="CMS/addItem.php">Add Item</a></li>
+                      <li><a href="CMS/activate.php">Activate/Deactive Item</a></li>
+                      <li><a href="CMS/contactUs.php">Contact Us</a></li>
+                      <li><a href="CMS/AddAdmin.php">Add Admin</a></li>
 
-                      <li><a href="#">View Client Side</a></li>
+                      <li><a href="indexClient">View Client Side</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
