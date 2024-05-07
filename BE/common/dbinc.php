@@ -2,7 +2,7 @@
 
 
 function getConnection(){
-$dsn = "mysql:host=localhost;dbname=testingfinal";
+$dsn = "mysql:host=localhost;dbname=web-final";
 $dbusername = "root";
 $dbpassword = "";
 
