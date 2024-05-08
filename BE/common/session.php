@@ -18,4 +18,15 @@ function ensureLoggedInIndex(){
 
 }
 
+
+function ensureadminloggedin(){
+    //this function ensures that the eadmin is logged in so when they are viewing the client side they can go back to admin mode without relogging in 
+    if(!isset($_SESSION['logged-in'])){
+        return 0;
+    }
+    else{
+        return 1 ;
+    }
+}
+
 ?>

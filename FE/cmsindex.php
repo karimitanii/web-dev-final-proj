@@ -2,6 +2,7 @@
 
 <?php  include "../be/common/session.php";
 ensureLoggedInIndex();
+ensureadminloggedin();
 
 
 
@@ -72,6 +73,8 @@ https://templatemo.com/tm-589-lugx-gaming
                       <li><a href="CMS/AddAdmin.php">Add Admin</a></li>
 
                       <li><a href="indexClient.php">View Client Side</a></li>
+                      <li><a href="../BE/common/logout.php">Logout</a></li>
+
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

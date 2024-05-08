@@ -19,17 +19,12 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
 
-TemplateMo 589 lugx gaming
-
-https://templatemo.com/tm-589-lugx-gaming
-
--->
-<?php
-include "views/commonView.php";
-include "views/clientView.php";
-?>
+  <?php
+  include "views/commonView.php";
+  include "views/clientView.php";
+  include "../BE/common/session.php";
+  ?>
   </head>
 
 <body>
@@ -48,13 +43,18 @@ include "views/clientView.php";
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+<header class="header-area header-sticky">
 <?php
-get_header();
-?>
-  </header>
-  <!-- ***** Header Area End ***** -->
+$result = ensureadminloggedin();
 
+if ($result == 0) {
+    get_header();  // For non-admin users or logged-out state
+} elseif ($result == 1) {
+    get_header_2();    // For logged-in admin users
+}
+?>
+</header>
+<!-- ***** Header Area End ***** -->
   <div class="main-banner">
     <div class="container">
       <div class="row">
@@ -216,9 +216,9 @@ get_header();
   </div>
 
   <footer>
-<?php
-get_footer();
-?>
+  <?php
+  get_footer();
+  ?>
   </footer>
 
   <!-- Scripts -->
