@@ -3,7 +3,11 @@
 <?php  include "../be/common/session.php";
 ensureLoggedInIndex();
 
+
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,11 +63,6 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="cmsindex.php" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
-                    </a>
-                    <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="cmsindex.php" class="active">Home</a></li>
@@ -92,9 +91,11 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="caption header-text">
             <h6>Welcome back </h6>
             <?php
-            $username = $_SESSION['displayName']; // Retrieve the username from the session
-       echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items." 
-    // ?>
+                if (isset($_SESSION['dn'])) {
+                    $username = $_SESSION['dn'];
+                    echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items.";
+                } 
+          ?>
             
           </div>
         </div>

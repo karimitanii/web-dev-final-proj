@@ -5,7 +5,7 @@
 include "../common/dbinc.php";
 include "../common/session.php";
 include "../models/userModel.php";
-//include "../models/adminModel.php";
+include "../models/adminModel.php";
 
 function varExists($var) {
     return isset($var);
@@ -24,9 +24,11 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
                 if (varExists($_POST["user-email"]) && varExists($_POST["pass"])) {
                 $email = $_POST["user-email"];
                 $pass = $_POST["pass"];
+                $displayName = $_POST["dn"];
                 if (isAccountExists($email, $pdo)) {
                     $userID = loginUser($email,$pass, $pdo);
                     if ($userID) {
+                        $_SESSION['dn'] = $displayName;
                         $_SESSION['userid'] = $userID;
                         $_SESSION['logged-in'] = true;
                         header('Location:../../fe/cmsindex.php');
@@ -90,7 +92,7 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
 
                 echo '<script>
                 alert("Platter Added Successfully!");
-                window.location.href="../../fe/CMS/addItem.php";
+                window.location.href="../../fe/CMS/AddItem.php";
             </script>';
             exit;
                 
