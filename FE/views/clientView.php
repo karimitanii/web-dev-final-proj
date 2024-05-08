@@ -21,7 +21,7 @@ function listPlatters(){
                  
                   <span class="description"><?php echo $descriptions[$i] ?></span> 
                     <div> </div>
-                  <span class="price"><em><?php echo '$'.(int)($prices[$plateIDS[$i]]) ?></em> </span>
+                  <span class="price"><em><?php echo '$'.(int)($prices[$plateIDS[$i]-1]) ?></em> </span>
               </div>
               <div class="down-content">
                   <h4><?php echo $menuItems[$i]?></h4>
