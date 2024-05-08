@@ -1,4 +1,4 @@
 <?php
 
-header('Location: CMS/login.php');
+header('Location: indexClient.php');
 ?>
