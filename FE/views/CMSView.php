@@ -1,13 +1,23 @@
+<head>
+      <style> 
+        td {
+          padding-right: 20px;
+          color: white;
+        }
+        th {
+          color:white;
+          padding-right: 20px;
+        }
+        table {
+          text-align:center;
+        }
+      </style>
+    </head>
 <?php
 
 function listItems() {
     
     ?>
-        <h1>
-            <center>
-                List of Items
-            </center>
-        </h1>
         <table>
             <tr>
                 <th>Id</th>

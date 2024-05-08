@@ -64,12 +64,11 @@ include "../../BE/models/userModel.php";
     <!-- ***** Header Area End ***** -->
 
     <div class="main-banner">
-    <div class="container">
+    <div class="container" style="margin-left: 36%">
         <div class="row">
             <div class="col-lg-6 align-self-center">
                 <div class="caption header-text">
-                    <h6>Welcome to</h6>
-                    <h2>Add New Platter</h2> 
+                    <h2>List of Platters</h2> 
                     <?php listItems()?>
                     
                    

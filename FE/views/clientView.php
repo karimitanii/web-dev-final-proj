@@ -21,7 +21,7 @@ function listPlatters(){
               </div>
               <div class="down-content">
                   <span class="category">Action</span>
-                  <h4><?php echo $menuItems[$plateIDS[$i]-1]?></h4>
+                  <h4><?php echo $menuItems[$i]?></h4>
                   <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
               </div>
           </div>

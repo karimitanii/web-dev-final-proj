@@ -48,8 +48,8 @@ function get_header_CMS(){
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="cmsindex.php" class="logo">
-                            <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        <a href="../cmsindex.php" class="logo">
+                            <img src="../assets/images/logo.png" alt="" style="width: 158px;">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->

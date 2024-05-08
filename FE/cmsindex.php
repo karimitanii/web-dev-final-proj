@@ -85,35 +85,33 @@ https://templatemo.com/tm-589-lugx-gaming
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner">
+  <div class="main-banner" style="padding-bottom: 100px; padding-top: 150px">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome to </h6>
+            <h6>Welcome back </h6>
             <?php
-           // $username = $_SESSION['username']; // Retrieve the username from the session
-    //   echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items." 
+            $username = $_SESSION['displayName']; // Retrieve the username from the session
+       echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items." 
     // ?>
             
           </div>
         </div>
         <div class="col-lg-4 offset-lg-2">
           <div class="right-image">
-            <img src="assets/images/banner-image.jpg" alt="">
+            <img src="assets/images/banner-image.jpg" alt="" style="margin-bottom:180px">
             
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="features">
-    <h2>Here are the features of being admin! </h2>
+    <div class="features">
+    <h2 style= "color:white; margin-bottom:20px">Here are the perks of being an admin! </h2>
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6">
-          <a href="addItem.php">
+          <a href="CMS/addItem.php">
             <div class="item">
               <div class="image">
                 <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
@@ -158,7 +156,9 @@ https://templatemo.com/tm-589-lugx-gaming
       </div>
     </div>
   </div>
+  </div>
 
+ 
  
   
         

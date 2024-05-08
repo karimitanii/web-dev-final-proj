@@ -5,7 +5,7 @@
 include "../common/dbinc.php";
 include "../common/session.php";
 include "../models/userModel.php";
-include "../models/adminModel.php";
+//include "../models/adminModel.php";
 
 function varExists($var) {
     return isset($var);
@@ -77,7 +77,7 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
                 alert("Action done Successfully!");
                 window.location.href="../../fe/CMS/activate.php";
             </script>';
-                
+                exit;
 
             break;
 
@@ -90,8 +90,9 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
 
                 echo '<script>
                 alert("Platter Added Successfully!");
-                window.location.href="../../fe/CMS/AddItem.php";
+                window.location.href="../../fe/CMS/addItem.php";
             </script>';
+            exit;
                 
 
 
