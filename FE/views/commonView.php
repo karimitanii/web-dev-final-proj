@@ -12,10 +12,10 @@ function get_header(){
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="indexClient.php" class="active">Home</a></li>
+                      <li><a href="indexClient.php">Home</a></li>
                       <li><a href="shopClient.php">View Our Platters</a></li>
-                      
                       <li><a href="contactClient.php">Contact Us</a></li>
+                      <li><a href="CMS/login.php">Admin Log In</a></li>
                      
                   </ul>   
                     <a class='menu-trigger'>
@@ -33,7 +33,7 @@ function get_footer(){
     ?>
     <div class="container">
     <div class="col-lg-12">
-      <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      <p>Karim Hallal, Razan Hourani, Karim Itani, Omar Mayassi. All rights reserved.</p>
     </div>
   </div>
   <?php

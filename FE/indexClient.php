@@ -59,7 +59,7 @@ get_header();
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
             <h6>Welcome to Walter White's Chef Page!</h6>
-            <h2>Best Lebanese - French Cuisine in Town!</h2>
+            <h2>Best Lebanese Cuisine in Town!</h2>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-2">
@@ -78,9 +78,9 @@ get_header();
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
+                <img src="assets/images/featured01.png" alt="" style="max-width: 80%;">
               </div>
-              <h4>Free Storage</h4>
+              <h4>Straight from the Chef's Kitchen</h4>
             </div>
           </a>
         </div>
@@ -88,9 +88,9 @@ get_header();
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
+                <img src="assets/images/fetaured02.png" alt="" style="max-width: 60%;">
               </div>
-              <h4>User More</h4>
+              <h4>Excellet Culinary Services</h4>
             </div>
           </a>
         </div>
@@ -98,9 +98,9 @@ get_header();
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="assets/images/featured-03.png" alt="" style="max-width: 44px;">
+                <img src="assets/images/featured03.png" alt="" style="max-width: 80%;">
               </div>
-              <h4>Reply Ready</h4>
+              <h4>Culinary Artistry in Every Dish</h4>
             </div>
           </a>
         </div>
@@ -108,9 +108,9 @@ get_header();
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="assets/images/featured-04.png" alt="" style="max-width: 44px;">
+                <img src="assets/images/featured04.png" alt="" style="max-width: 80%;">
               </div>
-              <h4>Easy Layout</h4>
+              <h4>Authentic Lebanese Cuisine</h4>
             </div>
           </a>
         </div>
@@ -118,165 +118,6 @@ get_header();
     </div>
   </div>
 
-  <div class="section trending">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading">
-            <h6>Trending</h6>
-            <h2>Trending Games</h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shopClient.php">View All</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$28</em>$20</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price">$44</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$64</em>$44</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price">$32</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section most-played">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading">
-            <h6>TOP GAMES</h6>
-            <h2>Most Played</h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shopClient.php">View All</a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-01.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-02.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-03.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-04.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-05.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/top-game-06.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.php">Explore</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="section categories">
     <div class="container">
@@ -289,41 +130,41 @@ get_header();
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4>Specials</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/categories-01.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/specials.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4>Mezze</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/categories-05.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/mezze.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4>Salads</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/categories-03.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/salads.jpg" alt="" style="height: 180px !importantt"></a>
             </div>
           </div>
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4>Main Dishes</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/categories-04.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/main.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4>Desserts</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/categories-05.jpg" alt=""></a>
+              <a href="product-details.php"><img src="assets/images/desserts.jpg" alt="" style="height: 200px !important" ></a>
             </div>
           </div>
         </div>
@@ -342,7 +183,7 @@ get_header();
                   <h6>Our Shop</h6>
                   <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
                 </div>
-                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <p>Pre-ordering our specials will allow you to have the first taste of our exceptional food!</p>
                 <div class="main-button">
                   <a href="shopClient.php">Shop Now</a>
                 </div>
@@ -356,7 +197,7 @@ get_header();
               <div class="col-lg-12">
                 <div class="section-heading">
                   <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                  <h2>Get Up To Date on the Newest Offers by <em>Subscribing</em>  to theNewsletter!</h2>
                 </div>
                 <div class="search-input">
                   <form id="subscribe" action="#">

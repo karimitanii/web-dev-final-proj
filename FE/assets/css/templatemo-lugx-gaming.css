@@ -120,12 +120,12 @@ body {
 }
 
 ::selection {
-  background: #0071f8;
+  background: #cda45e !important ;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #0071f8;
+  background: #cda45e !important;
   color: #fff;
 }
 
@@ -147,11 +147,11 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #0071f8;
+  color: #cda45e !important;
 }
 
 .section-heading h6 {
-  color: #ee626b;
+  color: #ccc;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -159,7 +159,7 @@ body {
 
 .main-button a {
   display: inline-block;
-  background-color: #ee626b;
+  background-color: black ;
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;
@@ -172,7 +172,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
   color: #fff;
 }
 
@@ -249,7 +249,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #0071f8;
+  background: #cda45e;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -272,7 +272,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #0071f8;
+  background: #cda45e;
   border-radius: 50%;
 }
 
@@ -285,7 +285,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #0071f8 !important;
+  background-color: black !important;
   border-radius: 0px 0px 25px 25px;
   height: 80px!important;
   position: fixed!important;
@@ -387,13 +387,13 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #ee626b;
+  background-color: #cda45e !important;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .header-area .main-nav .nav li:last-child:hover a {
-  background-color: #ee626b;
+  background-color: black !important;
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -585,7 +585,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ee626b!important;
+    color: #cda45e !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -651,7 +651,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-color: #cda45e !important;
   border-radius: 0px 0px 150px 150px;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -678,7 +678,6 @@ Banner Style
 
 .main-banner .caption h2:after {
   position: absolute;
-  background-image: url(../images/caption-dec.png);
   width: 202px;
   height: 12px;
   content: '';
@@ -713,7 +712,7 @@ Banner Style
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  background-color: #ee626b;
+  background-color: #cda45e !important;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -728,7 +727,7 @@ Banner Style
 }
 
 .main-banner .caption form button:hover {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
 }
 
 .main-banner .right-image {
@@ -744,7 +743,7 @@ Banner Style
   right: 20px;
   top: 20px;
   border-radius: 25px;
-  background-color: #008af8;
+  background-color: black !important;
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 700;
@@ -757,7 +756,7 @@ Banner Style
   left: -25px;
   bottom: -25px;
   border-radius: 50%;
-  background-color: #ee626b;
+  background-color: #cda45e !important;
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 700;
@@ -802,179 +801,15 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 90px;
-  background-color: #0071f8;
+  background-color: #cda45e !important;
   border-radius: 50%;
   transition: all .3s;
 }
 
 .features .item:hover .image {
-  background-color: #ee626b;
+  background-color: #ccc !important;
 }
 
-
-
-/* 
----------------------------------------------
-Trending Style
---------------------------------------------- 
-*/
-
-.trending .main-button {
-  margin-top: 32px;
-  text-align: right;
-}
-
-.trending .item  {
-  background-color: #eeeeee;
-  position: relative;
-  overflow: hidden;
-  border-radius: 25px;
-  margin-bottom: 30px;
-}
-
-.trending .item .thumb {
-  position: relative;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.trending .item span.price em {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: line-through;
-  display: block;
-}
-
-.trending .item span.price {
-  text-align: right;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  border-radius: 10px;
-  background-color: #008af8;
-  font-size: 17px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #fff;
-  padding: 8px 15px 6px 15px;
-}
-
-.trending .item .down-content {
-  padding: 25px;
-}
-
-.trending .item .down-content span.category {
-  font-size: 14px;
-  color: #7a7a7a;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.trending .item .down-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  transition: all .3s;
-}
-
-.trending .item .down-content a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #ee626b;
-  color: #fff;
-  border-radius: 50%;
-  right: 25px;
-  bottom: 25px;
-  transition: all .3s;
-}
-
-.trending .item:hover .down-content h4 {
-  color: #0071f8;
-}
-
-.trending .item:hover .down-content a {
-  background-color: #0071f8;
-}
-
-
-/* 
----------------------------------------------
-Most Played Style
---------------------------------------------- 
-*/
-
-.most-played {
-  background-color: #f7f7f7;
-  padding: 100px 0px;
-  border-radius: 150px;
-}
-
-.most-played .main-button {
-  margin-top: 32px;
-  text-align: right;
-}
-
-.most-played .item  {
-  background-color: #fff;
-  position: relative;
-  border-radius: 25px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.most-played .item .thumb {
-  position: relative;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.most-played .item .down-content {
-  padding: 20px 15px 40px 15px;
-}
-
-.most-played .item .down-content span.category {
-  font-size: 14px;
-  color: #7a7a7a;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.most-played .item .down-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  transition: all .3s;
-}
-
-.most-played .item .down-content a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  padding: 0px 15px;
-  background-color: #ee626b;
-  color: #fff;
-  border-radius: 20px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -20px;
-  transition: all .3s;
-}
-
-.most-played .item:hover .down-content h4 {
-  color: #0071f8;
-}
-
-.most-played .item:hover .down-content a {
-  background-color: #0071f8;
-}
 
 
 /* 
@@ -988,7 +823,7 @@ Categories Style
 }
 
 .categories .item  {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
   position: relative;
   border-radius: 25px;
   text-align: center;
@@ -1020,7 +855,7 @@ CTA Style
 }
 
 .cta::after {
-  background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/chef2.png);
   max-width: 550px;
   max-height: 510px;
   width: 100%;
@@ -1087,7 +922,7 @@ CTA Style
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  background-color: #ee626b;
+  background-color: #cda45e !important;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -1102,7 +937,7 @@ CTA Style
 }
 
 .cta .subscribe form button:hover {
-  background-color: #0071f8;
+  background-color: black !important;
 }
 
 
@@ -1114,10 +949,9 @@ Footer Style
 
 footer {
   margin-top: 150px;
-  background-color: #0071f8;
+  background-color: #cda45e !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/footer-bg.jpg);
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
 }
@@ -1149,7 +983,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-color: #cda45e !important;
   border-radius: 0px 0px 150px 150px;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -1161,17 +995,17 @@ Page Header Style
 .page-heading span {
   display: inline-block;
   font-size: 16px;
-  color: #fff;
+  color: black;
 }
 
 .page-heading span a {
-  color: #fff;
+  color: black;
 }
 
 .page-heading h3 {
   font-size: 48px;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
   margin-top: 20px;
   position: relative;
   margin-bottom: 20px;
@@ -1209,7 +1043,7 @@ Shop Page Style
 }
 
 .trending ul.trending-filter li a.is_active {
-  background-color: #ee626b;
+  background-color: black !important;
   color: #fff;
 }
 
@@ -1218,7 +1052,7 @@ Shop Page Style
 }
 
 .trending ul.trending-filter li a:hover {
-  color: #ee626b;
+  color: black !important;
 }
 
 .trending-box .item  {
@@ -1249,7 +1083,7 @@ Shop Page Style
   right: 20px;
   top: 20px;
   border-radius: 10px;
-  background-color: #008af8;
+  background-color: #cda45e !important;
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1281,7 +1115,7 @@ Shop Page Style
   line-height: 40px;
   width: 40px;
   height: 40px;
-  background-color: #ee626b;
+  background-color: black !important;
   color: #fff;
   border-radius: 50%;
   right: 25px;
@@ -1290,11 +1124,11 @@ Shop Page Style
 }
 
 .trending-box .item:hover .down-content h4 {
-  color: #0071f8;
+  color: #cda45e !important;
 }
 
 .trending-box .item:hover .down-content a {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
 }
 
 .trending ul.pagination {
@@ -1325,7 +1159,7 @@ Shop Page Style
 
 .trending ul.pagination li a:hover,
 .trending ul.pagination li a.is_active {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
   color: #fff;
 }
 
@@ -1359,7 +1193,7 @@ Single Page Style
 .single-product span.price {
   font-size: 27px;
   font-weight: 700;
-  color: #0071f8;
+  color: #cda45e !important;
 }
 
 .single-product span.price em {
@@ -1395,7 +1229,7 @@ Single Page Style
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  background-color: #ee626b;
+  background-color: black !important;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -1411,7 +1245,7 @@ Single Page Style
 }
 
 .single-product form button:hover {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
 }
 
 .single-product ul {
@@ -1422,7 +1256,7 @@ Single Page Style
   display: block;
   margin: 20px 0px;
   font-size: 14px;
-  color: #0071f8;
+  color: #cda45e !important;
 }
 
 .single-product ul li:last-child {
@@ -1469,7 +1303,7 @@ Single Page Style
 }
 
 .tabs-content .nav-tabs .nav-link.active {
-  color: #0071f8;
+  color: #cda45e !important;
 }
 
 .tabs-content .tab-content {
@@ -1558,7 +1392,7 @@ Contact PAge Style
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  background-color: #ee626b;
+  background-color: black !important;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -1570,7 +1404,7 @@ Contact PAge Style
 }
 
 .contact-page .right-content form button:hover {
-  background-color: #0071f8;
+  background-color: #cda45e !important;
 }
 
 /* 
