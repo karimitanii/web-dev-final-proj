@@ -92,13 +92,14 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome back </h6>
-            <?php
-                if (isset($_SESSION['dn'])) {
+            <h4>Welcome Back, </h4>
+            <h4> <?php if (isset($_SESSION['dn'])) {
                     $username = $_SESSION['dn'];
-                    echo "Hello, $username! Welcome back to the Admin Page. Here you can add, activate, and deactivate items.";
-                } 
-          ?>
+                    echo "$username !";
+                } ?> </h4>
+                <p> </p>
+            <p style="font-size: 120%" > Welcome back to the Admin Page. Here you can add, activate, and deactivate items. </p>
+       
             
           </div>
         </div>
@@ -141,7 +142,7 @@ https://templatemo.com/tm-589-lugx-gaming
               <div class="image">
                 <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>De activate Item</h4>
+              <h4>Deactivate Item</h4>
             </div>
           </a>
         </div>
