@@ -74,7 +74,16 @@ ensureLoggedInCMS();
 
     <div class="main-banner">
     
-        <?php signupForm()?>
+    <form action="../../BE/controllers/userController.php" method="POST">
+      <input type="hidden" name="action" value="SIGNUP">
+      <h1>Add an Admin</h1>
+        <?php signupForm();?>
+        <section id="submission">
+        <button type="button" onclick="validityCheck()">Add Admin</button>
+       
+      </section>
+        </form>
+
     
 </div>
 
