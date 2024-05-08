@@ -33,7 +33,7 @@ function get_footer(){
     ?>
     <div class="container">
     <div class="col-lg-12">
-      <p>Karim Hallal, Razan Hourani, Karim Itani, Omar Mayassi. All rights reserved.</p>
+      <p>Karim Hallal, Razan Hourani, Omar Mayassi, Karim Itani. All rights reserved.</p>
     </div>
   </div>
   <?php
