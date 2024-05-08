@@ -6,7 +6,7 @@ function get_header(){
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="indexClient.php" class="logo">
                         <img src="assets/images/logo.png" alt="" style="width: 50%;">
                     </a>
                     <!-- ***** Logo End ***** -->
