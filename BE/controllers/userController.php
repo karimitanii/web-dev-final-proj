@@ -110,6 +110,7 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"]== "POST") {
                 alert("Platter Deleted Successfully!");
                 window.location.href="../../fe/CMS/activate.php";
             </script>';
+            exit;
 
                 
 
