@@ -16,13 +16,11 @@ function listPlatters(){
       <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 <?php echo $items[$i] ?>">
           <div class="item">
               <div class="thumb">
-                  <a href="product-details.php"><img src="assets/images/<?php echo 'trending-0' . $plateIDS[$i] . '.jpg' ?>" alt=""></a>
-                  <span class="price"><em><?php echo '$'.(int)($prices[$plateIDS[$i]]) ?></em> <?php echo '$'.(int)($prices[$plateIDS[$i]] * 0.9) ?></span>
+                  <a><img src="assets/images/<?php echo   $plateIDS[$i] . '.jpg' ?>" alt=""></a>
+                  <span class="price"><em><?php echo '$'.(int)($prices[$plateIDS[$i]]) ?></em> </span>
               </div>
               <div class="down-content">
-                  <span class="category">Action</span>
                   <h4><?php echo $menuItems[$i]?></h4>
-                  <a href="product-details.php"><i class="fa fa-shopping-bag"></i></a>
               </div>
           </div>
       </div>

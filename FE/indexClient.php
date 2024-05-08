@@ -134,7 +134,7 @@ if ($result == 0) {
           <div class="item">
             <h4>Specials</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/specials.jpg" alt="" style="height: 200px !important"></a>
+              <a ><img src="assets/images/specials.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ if ($result == 0) {
           <div class="item">
             <h4>Mezze</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/mezze.jpg" alt="" style="height: 200px !important"></a>
+              <a ><img src="assets/images/mezze.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ if ($result == 0) {
           <div class="item">
             <h4>Salads</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/salads.jpg" alt="" style="height: 180px !importantt"></a>
+              <a><img src="assets/images/salads.jpg" alt="" style="height: 180px !importantt"></a>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ if ($result == 0) {
           <div class="item">
             <h4>Main Dishes</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/main.jpg" alt="" style="height: 200px !important"></a>
+              <a><img src="assets/images/main.jpg" alt="" style="height: 200px !important"></a>
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@ if ($result == 0) {
           <div class="item">
             <h4>Desserts</h4>
             <div class="thumb">
-              <a href="product-details.php"><img src="assets/images/desserts.jpg" alt="" style="height: 200px !important" ></a>
+              <a><img src="assets/images/desserts.jpg" alt="" style="height: 200px !important" ></a>
             </div>
           </div>
         </div>
