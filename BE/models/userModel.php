@@ -9,6 +9,15 @@ function getPlateIDs($pdo){
 
 }
 
+function getPlatedescription($pdo){
+    $query = "SELECT DESCRIPTION FROM PLATTERS WHERE isActive='1'";
+    $stmt = $pdo->query($query);
+    $des = $stmt->fetchAll(PDO::FETCH_COLUMN);
+    return $des;
+}
+
+
+
 function getPlateNames($pdo){
     $query = "SELECT platter FROM PLATTERS WHERE isActive='1'";
     $stmt = $pdo->query($query);
