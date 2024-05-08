@@ -25,7 +25,7 @@ ensureLoggedInCMS();
     <link rel="stylesheet" href="../assets/css/owl.css">
     <link rel="stylesheet" href="../assets/css/animate.css">
 
-    <?php include "../views/commonView.php"?>
+
 </head>
 
 <style>

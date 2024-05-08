@@ -23,7 +23,6 @@ ensureLoggedInCMS();
     <?php
 
 include "../views/CMSView.php";
-include "../views/commonView.php";
 include "../../BE/common/dbinc.php";
 include "../../BE/models/userModel.php";
 

@@ -199,6 +199,39 @@ function loginForm(){
 <?php
 }
 
+
+function get_header_CMS(){
+
 ?>
+<div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="../cmsindex.php" class="logo">
+                            <img src="../assets/images/logo.png" alt="" style="width: 158px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="../cmsindex.php" class="active">Home</a></li>
+                            <li><a href="addItem.php">Add Item</a></li>
+                            <li><a href="activate.php">Activate/Deactivate Item</a></li>
+                            <li><a href="addAdmin.php">Add Admin</a></li>
+                            <li><a href="../indexClient.php">View Client Side</a></li>
+                            <li><a href="../../BE/common/logout.php">Logout</a></li>
+
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
 
 
+    <?php
+}
+?>

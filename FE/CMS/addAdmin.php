@@ -36,7 +36,7 @@ ensureLoggedInCMS();
 
     <script src="../assets/js/formValidation.js" defer></script>
 
-    <?php include "../views/commonView.php";
+    <?php
     require_once("../views/CMSView.php");
     ?>
 </head>
