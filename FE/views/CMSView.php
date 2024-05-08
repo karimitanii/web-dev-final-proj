@@ -64,7 +64,7 @@ function listItems() {
 }
 function addItemForm() {
     ?>
-    <form method="POST" action="../../BE/controllers/userController.php">
+    <form method="POST" action="../../BE/controllers/userController.php" style="color:white">
                     <div class="form-group">
                             <label for="platter">ID (1-12)</label>
                             <input type="text" class="form-control" id="id-plate" name="id" required>
