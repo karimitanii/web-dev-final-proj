@@ -86,7 +86,7 @@ get_header();
           <div class="right-content">
             <div class="row">
               <div class="col-lg-12">
-                <form id="contact-form" action="../BE/controllers/contactClient.php" method="post">
+                <form id="contact-form" action="../BE/controllers/userController.php" method="post">
                   <div class="row">
                     <div class="col-lg-6">
                       <fieldset>
