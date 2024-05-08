@@ -102,6 +102,7 @@ function addPlatter($ID, $platter, $description, $status, $pdo){
 
 // START CONTACT BACKEND
 
+
 function insert_into_DB($firstName, $lastName, $email, $subject, $message) {
     require_once ('../common/dbinc.php');
     $pdo = getConnection(); // Get the PDO connection

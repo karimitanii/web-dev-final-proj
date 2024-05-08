@@ -97,9 +97,7 @@ function addItemForm() {
 }
 function signupForm(){
     ?>
-    <form action="../../BE/controllers/userController.php" method="POST">
-      <input type="hidden" name="action" value="SIGNUP">
-      <h1>Add an Admin</h1>
+   
       <section id="personal-details">
         <h2>Personal Details</h2>
         <ul>
@@ -155,11 +153,8 @@ function signupForm(){
         </ul>
       </section>
 
-      <section id="submission">
-        <button type="button" onclick="validityCheck()">Add Admin</button>
-       
-      </section>
-    </form>
+     
+   
 
     <?php
 }
@@ -175,6 +170,10 @@ function loginForm(){
       <section id="account-creation">
         <h2>Enter your credentials</h2>
         <ul>
+        <li>
+            <label for="dn">Display Name</label>
+            <input type="text" id="dn" name="dn" />
+          </li>
           <li>
             <label for="dn">Email Address</label>
             <input type="email" id="dn" name="user-email" />
@@ -191,6 +190,8 @@ function loginForm(){
         <button type="submit">Log In</button>
        
       </section>
+
+      <p> Don't have an account? <a href="../CMS/signup.php"> Sign Up <a><p>
     </form>
     
 
