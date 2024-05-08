@@ -34,8 +34,8 @@ https://templatemo.com/tm-589-lugx-gaming
 include "views/clientView.php";
 include "views/commonView.php";
 include "../BE/models/userModel.php";
-include "../BE/common/dbinc.php"
-
+include "../BE/common/dbinc.php";
+include "../BE/common/session.php";
 ?>
 </head>
 
@@ -57,7 +57,13 @@ include "../BE/common/dbinc.php"
    <!-- ***** Header Area Start ***** -->
    <header class="header-area header-sticky">
 <?php
-get_header();
+$result = ensureadminloggedin();
+
+if ($result == 0) {
+    get_header();  // For non-admin users or logged-out state
+} elseif ($result == 1) {
+    get_header_2();    // For logged-in admin users
+}
 ?>
   </header>
   <!-- ***** Header Area End ***** -->

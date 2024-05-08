@@ -27,7 +27,10 @@ https://templatemo.com/tm-589-lugx-gaming
 
 -->
 <?php
-include "views/commonView.php" ?>
+  include "views/commonView.php";
+  include "views/clientView.php";
+  include "../BE/common/session.php";
+  ?>
   </head>
   </head>
 
@@ -49,7 +52,13 @@ include "views/commonView.php" ?>
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
 <?php
-get_header();
+$result = ensureadminloggedin();
+
+if ($result == 0) {
+    get_header();  // For non-admin users or logged-out state
+} elseif ($result == 1) {
+    get_header_2();    // For logged-in admin users
+}
 ?>
   </header>
   <!-- ***** Header Area End ***** -->
